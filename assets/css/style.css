@@ -1,0 +1,120 @@
+body, html
+{
+	font-family: 'Press Start 2P', cursive;
+  	height: 100%;
+  	background-color: black;
+	color: white;
+	text-transform: uppercase;
+}
+
+.home
+{
+	background: url('../img/home.jpg') no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+}
+
+.stage1
+{
+	background: url('../img/stage1.jpg') no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+}
+
+.titulo-index
+{
+	text-shadow: -5px 5px 0px #980ab0, -10px 10px 0px #552660, -15px 15px 0px #140316;
+	animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+.titulo-stage1
+{
+	text-shadow: -5px 5px 0px #216377, -10px 10px 0px #19404c, -15px 15px 0px #112a31;
+	animation: 3s ease-out 0s 1 slideInFromTop;
+}
+
+.parpadea
+{
+  animation-name: parpadeo;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo
+{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo
+{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo
+{  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+.navegacion-home
+{
+	padding-bottom: 11rem;
+}
+
+.navegacion
+{
+	padding-bottom: 4.4rem;
+}
+
+.selecciona:before
+{
+	font-family: "Font Awesome 5 Free";
+   	content: "\f024";
+   	font-weight:900;
+    opacity: 0;
+}
+
+.selecciona:hover:before
+{
+    opacity: 1;
+}
+
+.selecciona:active
+{
+	animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
