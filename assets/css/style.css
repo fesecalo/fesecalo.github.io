@@ -36,6 +36,16 @@ body, html
     background-size: cover;
 }
 
+.finalboss
+{
+  background: url('../img/finalboss.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .titulo-index
 {
 	text-shadow: -5px 5px 0px #980ab0, -10px 10px 0px #552660, -15px 15px 0px #140316;
@@ -48,8 +58,13 @@ body, html
 	animation: 3s ease-out 0s 1 slideInFromTop;
 }
 
-
 .titulo-stage2
+{
+  text-shadow: -5px 5px 0px #5127f6, -10px 10px 0px #2a08b2, -15px 15px 0px #120090;
+  animation: 3s ease-out 0s 1 rotate;
+}
+
+.titulo-finalboss
 {
   text-shadow: -5px 5px 0px #5127f6, -10px 10px 0px #2a08b2, -15px 15px 0px #120090;
   animation: 3s ease-out 0s 1 rotate;
@@ -144,7 +159,34 @@ ul li
   margin-bottom: 1rem;
 }
 
-/*.card
+.card-img-top
 {
-  margin-bottom: 4rem;
-}*/
+  width: 180px;
+  height: 180px;
+}
+
+
+.social {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 2000;
+}
+ 
+ 
+.social a {
+  display: inline-block;
+  color:#fff;
+  background: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+
+.social a:hover
+{
+  background: #000;
+  padding: 10px 30px;
+}
