@@ -10,8 +10,6 @@ function initParpadear(stage)
     blink.style.color = color;
   
   }
-
-  window.location.href = "stage1.html";
-
+  //window.location.href = "stage1.html";
 }
 

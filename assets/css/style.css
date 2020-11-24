@@ -1,8 +1,7 @@
 body, html
 {
 	font-family: 'Press Start 2P', cursive;
-  	height: 100%;
-  	background-color: black;
+  height: 100%;
 	color: white;
 	text-transform: uppercase;
 }
@@ -14,6 +13,7 @@ body, html
   	-moz-background-size: cover;
   	background-size: cover;
   	-o-background-size: cover;
+  	background-size: cover;
 }
 
 .stage1
@@ -23,6 +23,17 @@ body, html
   	-moz-background-size: cover;
   	background-size: cover;
   	-o-background-size: cover;
+    background-size: cover;
+}
+
+.stage2
+{
+  background: url('../img/stage2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .titulo-index
@@ -35,6 +46,13 @@ body, html
 {
 	text-shadow: -5px 5px 0px #216377, -10px 10px 0px #19404c, -15px 15px 0px #112a31;
 	animation: 3s ease-out 0s 1 slideInFromTop;
+}
+
+
+.titulo-stage2
+{
+  text-shadow: -5px 5px 0px #5127f6, -10px 10px 0px #2a08b2, -15px 15px 0px #120090;
+  animation: 3s ease-out 0s 1 rotate;
 }
 
 .parpadea
@@ -81,26 +99,6 @@ body, html
 	padding-bottom: 4.4rem;
 }
 
-.selecciona:before
-{
-	font-family: "Font Awesome 5 Free";
-   	content: "\f024";
-   	font-weight:900;
-    opacity: 0;
-}
-
-.selecciona:hover:before
-{
-    opacity: 1;
-}
-
-.selecciona:active
-{
-	animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -118,3 +116,35 @@ body, html
     transform: translateX(0);
   }
 }
+
+@keyframes rotate {
+  0% {
+    transform:rotate(45deg);
+  }
+}
+
+
+a
+{
+  color: white;
+}
+
+a:hover
+{
+  color: white;
+  animation:parpadeo infinite .4s
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li
+{
+  margin-bottom: 1rem;
+}
+
+/*.card
+{
+  margin-bottom: 4rem;
+}*/
